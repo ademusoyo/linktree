@@ -61,6 +61,7 @@ In the event that there is an issue with the initial database setup run the roll
 
 ## Starting the server
 
+Navigate to the `server` directory and install the node modules by running `npm install`
 
 When that is complete, run `node index.js` to start the server.
 
