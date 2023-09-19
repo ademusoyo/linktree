@@ -47,12 +47,21 @@ INSERT 0 2
 
 open the `queries.js` file and update the 'user' key to have your username as the value.
 
+```
+const pool = new Pool({
+  user: '<your username>',
+ ...
+})
+```
+
 ### Database Rollback
 In the event that there is an issue with the initial database setup run the rollback script by entering the following in your terminal:
 
 `psql -f linktree_database_rollback.sql`
 
 ## Starting the server
+
+
 When that is complete, run `node index.js` to start the server.
 
 You should see the following in your terminal
