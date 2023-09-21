@@ -1,7 +1,46 @@
 # Linktree APP 
 
+# Overview 
+This is a simple linktree application that enables users to: 
+- add new links
+- edit the links they've already created
+- delete links they no longer want to see. 
+
+This application was built using ReactJs/Typescript in the Front-End with an ExpressJS server and Postgres as a Database
+
+## Assumptions
+The overall assumption of this app is that it is not intended to be released to production anytime soon.Because of this here are somethings I made assumptions about: 
+- There wasn't a real need to focus on mobile
+- When a link gets deleted, we can permanently delete it from our database (instead of soft deleting)
+- Designs didn't have to be "pretty" more importance was placed on getting the job and making sure it ran properly.
 
 
+
+# Frontend 
+
+The frontend is built using react typescript.  To run this code:
+
+- head to the `client` directory 
+- install node modules using `npm install`
+- run `npm start`
+
+You should see the following in your terminal 
+
+```
+Compiled successfully!
+
+You can now view client in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.1.159:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+No issues found.
+
+```
 
 
 # Backend 

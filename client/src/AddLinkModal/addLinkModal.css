@@ -1,0 +1,60 @@
+.link-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .link-content {
+    background-color: white;
+    padding: 5rem;
+    border-radius: 5px;
+  }
+  
+  .link-content h2 {
+    margin-top: 0;
+  }
+  
+  .link-content form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .link-content label {
+    margin-bottom: 5px;
+  }
+  
+  .link-content input,
+  .link-content textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  .link-content button[type='submit'] {
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .link-content button[type='submit']:disabled {
+    opacity: 0.5;
+    background-color: grey;
+    cursor: not-allowed;
+  }
+  
+  .link-content .close-btn {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  

@@ -21,8 +21,9 @@ const createLink = (request, response) => {
     pool.query('INSERT INTO urls (link_name, link_url) VALUES ($1, $2) RETURNING *', [link_name, link_url], (error, results) => {
       if (error) {
         throw error
+        response.status(500)
       }
-      response.status(201).send(`Link added with ID: ${results.rows[0].id}`)
+      response.status(201)
     })
   }
 
@@ -37,9 +38,10 @@ const createLink = (request, response) => {
       [link_name, link_url, id],
       (error, results) => {
         if (error) {
+          response.status(500)
           throw error
         }
-        response.status(200).send(`Link modified with ID: ${id}`)
+        response.status(200)
       }
     )
   }
@@ -49,9 +51,10 @@ const createLink = (request, response) => {
   
     pool.query('DELETE FROM urls WHERE id = $1', [id], (error, results) => {
       if (error) {
+        response.status(500)
         throw error
       }
-      response.status(200).send(`Link deleted with ID: ${id}`)
+      response.status(200)
     })
   }
 

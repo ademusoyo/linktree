@@ -7,3 +7,10 @@
     margin: 10%;
     padding: 1rem;
 }
+
+.modal-button {
+    margin: 1.5rem;
+    background-color: white;
+    padding: 1.2rem;
+}
+

@@ -16,6 +16,16 @@
     width: 40%;
 }
 
+.link-form {
+    margin: .5rem;
+    padding: 1.5rem;
+    color: black;
+    border: 2px solid black;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0, .1);
+    padding: 1rem 2rem;
+    width: 55%;
+}
+
 .link:hover {
     text-decoration: underline;
 }
@@ -31,4 +41,27 @@
     width: 10%;
     color: black;
     background-color: red;
+}
+
+.save-button {
+    margin: .5rem;
+    color: white;
+    background-color: blue;
+    width: 20%;
+    padding: 1rem;
+}
+
+.save-button:disabled {
+    opacity: 0.5;
+    background-color: grey;
+    cursor: not-allowed;
+  }
+
+input {
+    margin: .5rem;
+    padding: .2rem
+}
+
+label {
+    margin: .3rem
 }
