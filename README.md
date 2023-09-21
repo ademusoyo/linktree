@@ -67,7 +67,7 @@ When that is complete, run `node index.js` to start the server.
 
 You should see the following in your terminal
 ```
-Hello! App is running on port 3000.
+Hello! App is running on port 3001.
 ```
 
 

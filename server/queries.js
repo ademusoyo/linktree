@@ -1,6 +1,6 @@
 const Pool = require('pg').Pool
 const pool = new Pool({
-  user: '<your username>',
+  user: 'sawolumo',
   host: 'localhost',
   database: 'linktree_app',
   port: 5432,

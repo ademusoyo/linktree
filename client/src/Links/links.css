@@ -1,0 +1,9 @@
+.links-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-button {
+    margin: 10%;
+    padding: 1rem;
+}
