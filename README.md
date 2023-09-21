@@ -13,6 +13,7 @@ The overall assumption of this app is that it is not intended to be released to 
 - There wasn't a real need to focus on mobile
 - When a link gets deleted, we can permanently delete it from our database (instead of soft deleting)
 - Designs didn't have to be "pretty" more importance was placed on getting the job and making sure it ran properly.
+- For client-side validation, we want to ensure that the url is a valid url before we send it back to our database.
 
 
 
