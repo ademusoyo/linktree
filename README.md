@@ -43,6 +43,9 @@ No issues found.
 
 ```
 
+## Testing
+To run the front-end tests run `npm test` in your terminal.
+
 
 # Backend 
 The backend uses postgres as a database with nodejs express server. To create a new postgres database on your local host: 
