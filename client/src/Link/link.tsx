@@ -37,18 +37,15 @@ const Link: React.FC<LinkProps> = ({ id, linkName, linkUrl }) => {
         }
 
         updateLink(id, bodyParams)
-
-        window.location.reload()
     }
 
     const removeLink = () => {
         deleteLink(id)
-        window.location.reload()
     }
 
     if (isEditing) {
         return(
-            <div className="link-grid">
+            <div className="link-grid"  data-testid="link-test-grid">
                     <form className="link-form" onSubmit={saveLink}>
                         <label>
                             Link Name:
@@ -73,7 +70,7 @@ const Link: React.FC<LinkProps> = ({ id, linkName, linkUrl }) => {
         return (
             <>
              <div className="link-grid">
-                <a className="link" href={linkHref} target="_blank" rel="noopener noreferrer">
+                <a href={linkHref} target="_blank" rel="noopener noreferrer">
                     {linkTitle}
                 </a>
                 <button className="edit-button" onClick={editLink}>Edit</button>
