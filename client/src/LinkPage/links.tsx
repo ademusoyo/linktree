@@ -4,7 +4,7 @@ import Link from '../Link/link';
 import { getLinks } from '../api';
 import AddLinkModal from '../AddLinkModal/addLinkModal';
 
-type Href = {
+export type Href = {
     id: number;
     link_name: string;
     link_url: string;

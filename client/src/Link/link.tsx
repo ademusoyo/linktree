@@ -37,10 +37,12 @@ const Link: React.FC<LinkProps> = ({ id, linkName, linkUrl }) => {
         }
 
         updateLink(id, bodyParams)
+        window.location.replace(window.location.href)
     }
 
     const removeLink = () => {
         deleteLink(id)
+        window.location.replace(window.location.href)
     }
 
     if (isEditing) {

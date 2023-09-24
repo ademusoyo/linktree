@@ -30,6 +30,7 @@ const handleLinkUrlChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     }
     createLink(params)
     onClose();
+    window.location.replace(window.location.href)
   };
 
   return (

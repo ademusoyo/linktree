@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import LinkPage from './links';
+import LinkPage  from './links';
 
 
 describe('Links Page', () => {
@@ -11,10 +11,11 @@ describe('Links Page', () => {
         expect(welcomeMessage).toBeInTheDocument();
       });
 
-    it('renders the add new link button', () => {
+     it('renders the add new link button', () => {
         render(<LinkPage />);
         const addButton = screen.getByRole('button', { name: /add new link/i });
         expect(addButton).toBeInTheDocument();
+        
       });
   });
 
