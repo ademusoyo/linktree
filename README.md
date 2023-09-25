@@ -15,6 +15,11 @@ The overall assumption of this app is that it is not intended to be released to 
 - Designs didn't have to be "pretty" more importance was placed on getting the job and making sure it ran properly.
 - For client-side validation, we want to ensure that the url is a valid url before we send it back to our database.
 
+## Decisions
+- I have decided to create an inline edit form instead of using a modal, which I did for the Create Button.
+- For front-end testing, I have chosen to test the home page, link component, and modal components separately instead of testing them all together.
+- For backend testing, I have chosen to test the database connection, server connection, and one of the API endpoints to ensure that everything is functioning properly.
+
 
 
 # Frontend 
@@ -115,5 +120,7 @@ Hello! App is running on port 3001.
 
 ## Testing
 To run the back-end tests run `npm test` in your terminal in the `servers`.
+
+
 
 
