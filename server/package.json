@@ -4,14 +4,27 @@
   "description": "the linktree server for the app using postgres and express",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "ademusoyo",
   "license": "ISC",
   "dependencies": {
+    "@babel/preset-env": "^7.22.20",
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "http": "^0.0.1-security",
     "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
   }
 }

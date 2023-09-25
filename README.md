@@ -44,7 +44,7 @@ No issues found.
 ```
 
 ## Testing
-To run the front-end tests run `npm test` in your terminal.
+To run the front-end tests run `npm test` in your terminal in the same client directory.
 
 
 # Backend 
@@ -106,11 +106,14 @@ In the event that there is an issue with the initial database setup run the roll
 
 Navigate to the `server` directory and install the node modules by running `npm install`
 
-When that is complete, run `node index.js` to start the server.
+When that is complete, run `node server.js` to start the server.
 
 You should see the following in your terminal
 ```
 Hello! App is running on port 3001.
 ```
+
+## Testing
+To run the back-end tests run `npm test` in your terminal in the `servers`.
 
 

@@ -5,6 +5,7 @@ const app = express()
 const db = require('./queries')
 const port = 3001
 
+
 app.use(bodyParser.json())
 app.use(
   bodyParser.urlencoded({
@@ -23,6 +24,8 @@ app.post('/links', db.createLink)
 app.put('/links/:id', db.updateLink)
 app.delete('/links/:id', db.deleteLink)
 
-app.listen(port, () => {
-    console.log(`Hello! App running on port ${port}.`)
+const server = app.listen(port, () => {
+  console.log(`Hello! App running on port ${port}.`)
 })
+
+module.exports = server;

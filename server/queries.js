@@ -1,6 +1,6 @@
 const Pool = require('pg').Pool
 const pool = new Pool({
-  user: 'sawolumo',
+  user: '<your_username>',
   host: 'localhost',
   database: 'linktree_app',
   port: 5432,
@@ -20,8 +20,8 @@ const createLink = (request, response) => {
   
     pool.query('INSERT INTO urls (link_name, link_url) VALUES ($1, $2) RETURNING *', [link_name, link_url], (error, results) => {
       if (error) {
-        throw error
         response.status(500)
+        throw error
       }
       response.status(201)
     })
